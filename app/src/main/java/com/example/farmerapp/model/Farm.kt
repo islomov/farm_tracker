@@ -9,6 +9,6 @@ class Farm(val id:Int,val title:String,val img:Int,val latLng: LatLng) {
     val polygonsOptions:MutableList<PolygonOptions> = mutableListOf()
     val polygons:MutableList<Polygon> = mutableListOf()
     val polygonIds:MutableList<Int> = mutableListOf()
-    val wateringLevel: HashMap<Int,Int> = HashMap()
+    val wateringLevel: HashMap<Int,String> = HashMap()
     val centerOfPolygons: HashMap<Int,LatLng> = HashMap()
 }

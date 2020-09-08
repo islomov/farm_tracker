@@ -9,7 +9,7 @@ import androidx.fragment.app.DialogFragment
 import com.example.farmerapp.R
 import kotlinx.android.synthetic.main.fragment_dialog_watering.*
 
-class WateringDialogFragment(val level:Int,val onSave:(level:Int)->Unit) :DialogFragment(){
+class WateringDialogFragment(val level:String,val onSave:(level:String)->Unit) :DialogFragment(){
 
 
     override fun onCreateView(
@@ -25,7 +25,7 @@ class WateringDialogFragment(val level:Int,val onSave:(level:Int)->Unit) :Dialog
         save.setOnClickListener {
             val newLevel = edit.text.toString()
             if(newLevel.isNotEmpty()){
-                onSave(newLevel.toInt())
+                onSave(newLevel)
                 dismiss()
             }
         }

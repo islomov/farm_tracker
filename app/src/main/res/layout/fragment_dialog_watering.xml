@@ -7,10 +7,18 @@
     android:padding="30dp"
     >
 
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Watering level in %"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        />
+
     <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/edit"
         android:layout_width="match_parent"
         android:hint="Watering Level"
+        android:inputType="number"
         android:layout_height="wrap_content"/>
 
     <LinearLayout

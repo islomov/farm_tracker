@@ -110,7 +110,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             farm.polygonsOptions.add(polygonOptions)
             farm.polygons.add(polygon)
             farm.centerOfPolygons[polygonId] = centerOfPolygon
-            farm.wateringLevel[polygonId] = 0
+            farm.wateringLevel[polygonId] = "0"
             farm.polygonIds.add(polygonId)
             polygonId++
             isMapDrawable = false
